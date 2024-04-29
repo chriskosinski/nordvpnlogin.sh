@@ -4,7 +4,7 @@ YOURTOKEN=
 STATUS=echo `nordvpn status | grep Status | cut -d":" -f2 | tr -d " "`
 
 if [[ "$STATUS" == "Connected" ]]; then
-  echo "Nordvpn jetst podlaczony"
+  echo "Connected"
   
 else
 YOURTOKEN=
